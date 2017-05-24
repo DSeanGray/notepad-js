@@ -1,15 +1,32 @@
-<script src="./testLibrary.js"></script>
-<script src="./note-model.js" ></script>
-<script src="./note-model_Spec.js"></script>
-<script src="./node-list-model.js"></script>
-<script src="./node-list-model_Spec.js"></script>
-<script src="./note-list-view.js"></script>
-<script src="./note-list-view_Spec.js"></script>
-<h1>Welcome to our Notes Application</h1>
-<script>
-  var list = new listOfNotes();
-  var view = new noteListView(list);
-  list.writeNote("Favourite food: pesto");
-  list.writeNote("Favourite drink: seltzer");
-  document.write(view.displayPage())
-</script>
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="./testLibrary.js"></script>
+    <script src="./note-model.js" ></script>
+    <script src="./note-model_Spec.js"></script>
+    <script src="./node-list-model.js"></script>
+    <script src="./node-list-model_Spec.js"></script>
+    <script src="./note-list-view.js"></script>
+    <script src="./note-list-view_Spec.js"></script>
+    <title>Notepad</title>
+  </head>
+  <body>
+    <h1>Welcome to our Notes Application</h1>
+
+    <br>
+    <br>
+
+    <div id="app">
+      <p>Hello</p>
+    </div>
+
+    <script>
+      var list = new listOfNotes();
+      var view = new noteListView(list);
+      list.writeNote("Favourite food: pesto");
+      list.writeNote("Favourite drink: seltzer");
+      document.write(view.displayPage())
+    </script>
+
+  </body>
+</html>
