@@ -9,9 +9,10 @@
     <script src="./node-list-model_Spec.js"></script>
     <script src="./note-list-view.js"></script>
     <script src="./note-list-view_Spec.js"></script>
+    <script src="./index.js"></script>
     <title>Notepad</title>
   </head>
-  <body onload="changeText()">
+  <body onload="initialize(), initialize.noteController.changeText()">
     <h1>Welcome to our Notes Application</h1>
 
     <br>
@@ -21,13 +22,18 @@
       <p>Hello</p>
     </div>
 
-    <script>
+    <form id="submitNote">
+      <input type="text" name="noteInput" id="noteInput">
+      <button onclick="noteController.submitNote()">Submit Note</button>
+    </form>
+
+    <!-- <script>
       var list = new listOfNotes();
       var view = new noteListView(list);
       list.writeNote("Favourite food: pesto");
       list.writeNote("Favourite drink: seltzer");
       document.write(view.displayPage())
-    </script>
+    </script> -->
 
   </body>
 </html>
