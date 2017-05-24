@@ -13,5 +13,5 @@
       list.writeNote(noteInput);
     };
 
-    exports.noteController = noteController();
+    exports.noteController = noteController;
 })(this);

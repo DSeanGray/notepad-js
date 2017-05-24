@@ -1,3 +1,4 @@
-function initialize() {
-  this.noteController = new noteController();
-}
+noteController = new noteController();
+
+list = new listOfNotes();
+list.writeNote('string');
