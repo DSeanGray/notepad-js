@@ -1,14 +1,12 @@
 (function(exports) {
   function noteController() {
     this.list = new listOfNotes();
-    this.noteListView = new noteListView(this.list);
+    // this.noteListView = new noteListView(this.list);
   }
 
     noteController.prototype.changeText = function () {
-      this.list.writeNote("asdkjlelrkjvnaelrkj");
-      console.log(this.list);
-      document.getElementById("app").innerHTML = this.noteListView.displayPage();
-      console.log(this.list.listItems);
+      // this.list.writeNote("asdkjlelrkjvnaelrkj");
+      // document.getElementById("app").innerHTML = this.noteListView.displayPage();
     };
 
     exports.noteController = noteController;

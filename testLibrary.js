@@ -19,7 +19,7 @@
     },
 
     isDefined: function(assertion) {
-      if (assertion !== null )
+      if (Object.prototype.toString.call(assertion) !== '[object Object]' )
         throw new Error("Assertion failed: " + assertion + " is undefined.");
     }
   };
