@@ -3,12 +3,12 @@
   <head>
     <script src="./note-controller.js"></script>
     <script src="./testLibrary.js"></script>
-    <script src="./note-model.js" ></script>
-    <script src="./note-model_Spec.js"></script>
-    <script src="./node-list-model.js"></script>
-    <script src="./node-list-model_Spec.js"></script>
-    <script src="./note-list-view.js"></script>
-    <script src="./note-list-view_Spec.js"></script>
+    <script src="./lib/note-model.js" ></script>
+    <script src="./spec/note-model_Spec.js"></script>
+    <script src="./lib/note-list-model.js"></script>
+    <script src="./spec/note-list-model_Spec.js"></script>
+    <script src="./lib/note-list-view.js"></script>
+    <script src="./spec/note-list-view_Spec.js"></script>
     <script src="./index.js"></script>
     <title>Notepad</title>
   </head>
@@ -21,11 +21,6 @@
     <div id="app">
       <p>Hello</p>
     </div>
-
-    <form id="submitNote">
-      <input type="text" name="noteInput" id="noteInput">
-      <button onclick="noteController.submitNote()">Submit Note</button>
-    </form>
 
     <!-- <script>
       var list = new listOfNotes();

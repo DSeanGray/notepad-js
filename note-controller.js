@@ -1,16 +1,14 @@
 (function(exports) {
   function noteController() {
     this.list = new listOfNotes();
+    this.noteListView = new noteListView(this.list);
   }
 
     noteController.prototype.changeText = function () {
-      document.getElementById("app").innerHTML = "wazzaaaaaaaaap";
-    };
-
-    noteController.prototype.submitNote = function () {
-      console.log("HEllo");
-      var noteInput = document.getElementById("noteInput");
-      list.writeNote(noteInput);
+      this.list.writeNote("asdkjlelrkjvnaelrkj");
+      console.log(this.list);
+      document.getElementById("app").innerHTML = this.noteListView.displayPage();
+      console.log(this.list.listItems);
     };
 
     exports.noteController = noteController;
