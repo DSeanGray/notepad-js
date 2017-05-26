@@ -8,6 +8,6 @@
   var note = new Note("Hello Chris");
   var noteView = new singleNoteView(note);
 
-  assert.isEqual(noteView.displayHTML(), note.text);
+  assert.isEqual(noteView.displayHTML(), "<div>" + note.text + "</div>");
   console.log("adds content to the page");
 })();
