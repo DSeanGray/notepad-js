@@ -6,6 +6,8 @@
 
     noteController.prototype.changeText = function () {
       this.list.writeNote("testString");
+      this.list.writeNote("testString");
+
       document.getElementById("app").innerHTML = this.noteListView.displayPage();
     };
 

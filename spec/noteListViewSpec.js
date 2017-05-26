@@ -15,4 +15,5 @@
   list.writeNote("Favourite food: pesto");
   list.writeNote("Favourite drink: seltzer");
   assert.isEqual(view.displayPage(), "<ul><li><div>Favourite food: pesto</div></li><li><div>Favourite drink: seltzer</div></li></ul>");
+  console.log("view outputs html to be rendered on the page.");
 })();
