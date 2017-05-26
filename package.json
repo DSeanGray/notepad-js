@@ -4,6 +4,7 @@
   "description": "",
   "main": "node-list-model.js",
   "scripts": {
+    "start:dev": "nodemon ./bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,7 +18,8 @@
   },
   "homepage": "https://github.com/DSeanGray/notepad-js#readme",
   "dependencies": {
-    "http-server": "^0.10.0"
+    "http-server": "^0.10.0",
+    "nodemon": "^1.11.0"
   },
   "devDependencies": {
     "http-server": "^0.10.0"

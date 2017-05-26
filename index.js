@@ -1,1 +1,1 @@
-noteController = new noteController();
+// noteController = new noteController();
